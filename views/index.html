@@ -1,0 +1,62 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search</title>
+    <style>
+      body,html{
+        padding:0;
+        margin:0;
+      }
+      body{
+        background-color:#00695C;
+        font-family:Harrington;
+        font-size:20px;
+        color:white;
+      }
+      h1{
+        margin:0;
+        background-color:black;
+        padding:20px;
+        border-bottom:10px groove #1565C0;
+      }
+      div{
+        width:60%;
+        padding:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>
+        Image search
+      </h1>
+      <div>
+        This app can be used to search for images with the query provided by you. The results can be paginated by using a page parameter.
+        The previous searches can also be viewed.
+        <h2>
+          Usage : 
+        </h2>
+        <hr/>
+        To search : <br>
+        <code>https://image-search-service.glitch.me/search/query_here?page=number_here</code><br><br>
+        To view previous searches:<br>
+        <code>https://image-search-service.glitch.me/search</code>
+        <hr/>
+        <h2>
+          Results : 
+        </h2>
+        Results will be in JSON format having image URL, title, thumbnail URL and page URL.<br>
+        Latest queries will also be in JSON format having the search term and the time of search.
+      </div>
+    </center>
+  </body>
+</html>
